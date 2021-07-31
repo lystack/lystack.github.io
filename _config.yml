@@ -3,7 +3,7 @@
 # ---------------- #
 baseurl:
 date_format: "ordinal"
-title: 博客
+title: leon的博客
 timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 5
@@ -75,9 +75,9 @@ navs:
     href: /wiki/
     label: 维基
 
-  -
-    href: /links/
-    label: 链接
+#   -
+#     href: /links/
+#     label: 链接
 
   -
     href: /about/
