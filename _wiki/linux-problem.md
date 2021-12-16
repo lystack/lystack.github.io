@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: Linux常用问题
+title: Linux常见问题
 cate1: linux
 cate2:
 description: 记录linux使用过程中遇到的问题
