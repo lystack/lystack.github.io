@@ -1,10 +1,10 @@
 ---
 layout: wiki
 title: Linux常见问题
-cate1: linux
+cate1: Linux
 cate2:
 description: 记录linux使用过程中遇到的问题
-keywords: linux
+keywords: Linux
 ---
 
 # https证书认证问题
