@@ -1,9 +1,9 @@
 ---
 layout: wiki
-title: JSON
+title: Linux常用命令
 cate1: linux
 cate2:
-description: JSON
+description: 记录linux常用命令，方便查阅
 keywords: linux
 ---
 
