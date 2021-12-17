@@ -36,6 +36,7 @@ cat file.txt | sed 1d
 ```
 
 awk删除开头n行只需要 NR>n 即可
+
 sed删除开头n行需要 1,nd 即可
 ### 删除尾行
 ```
