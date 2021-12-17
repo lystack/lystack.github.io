@@ -24,3 +24,29 @@ keywords: linux
 `egrep -i 'killed process' /var/log/messages`
 
 `egrep -i -r 'killed process' /var/log`
+
+# awk
+## 去除重复行
+`cat file.txt | awk '!a[$0]++'`
+## 删除首尾行
+### 删除首行
+```
+cat file.txt | awk 'NR>1 {print $0}'
+cat file.txt | sed 1d
+```
+
+awk删除开头n行只需要 NR>n 即可
+sed删除开头n行需要 1,nd 即可
+### 删除尾行
+```
+cat file.txt | awk 'NR>1 {print line}{line=$0}'
+cat file.txt | sed '$d'
+````
+
+### 删除首尾行
+`cat file.txt | awk 'NR>2 {print line}{line=$0}'`
+
+### 更简单的方式
+`cat file.txt | head -n -2`
+
+负数表示显示到倒数第几行
