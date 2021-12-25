@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: git命令
+title: Git命令
 cate1: Git
 cate2:
 description: Git
