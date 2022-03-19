@@ -7,7 +7,7 @@ description: 记录linux常用命令，方便查阅
 keywords: linux
 ---
 
-# 磁盘相关
+# 磁盘
 ## 磁盘剩余空间
 `df -h`
 ## 当前目录磁盘大小
@@ -17,7 +17,7 @@ keywords: linux
 ## 文件是否被进程占用导致无法删除
 `lsof | grep deleted`
 
-# 进程相关
+# 进程
 ## 被系统killed掉的进程
 `dmesg | egrep -i -B100 'killed process'`
 
@@ -51,3 +51,13 @@ cat file.txt | sed '$d'
 `cat file.txt | head -n -2`
 
 负数表示显示到倒数第几行
+
+# vim
+## 删除行
+```
+:g/pattern/d
+
+:%s/pattern//g
+e.g :%s/.*_id.*$\n//g  注意要匹配换行符一起删除
+```
+vim对一次编辑的行数有限制，可通过 `@:`重复执行命令，也可`10@:`重复执行10次
