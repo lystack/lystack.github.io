@@ -61,3 +61,8 @@ cat file.txt | sed '$d'
 e.g :%s/.*_id.*$\n//g  注意要匹配换行符一起删除
 ```
 vim对一次编辑的行数有限制，可通过 `@:`重复执行命令，也可`10@:`重复执行10次
+
+# 遍历
+```
+for dir in `ls`; do cd $dir && git pull && cd ..; done
+```
