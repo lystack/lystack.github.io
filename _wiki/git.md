@@ -33,3 +33,7 @@ git config --global alias.cm commit
 git config --global alias.st status
 git config --global alias.unstage 'reset HEAD --'
 ```
+# 批量更新代码
+```
+for file in ./*; do if test -d $file; then echo pull $file && cd $file && git pull && cd ..; fi;done
+```
